@@ -12,12 +12,12 @@
 
 ## Key Concepts:
 
-- **Classes and Objects**:
+### Classes and Objects:
 
   - **Class**: A blueprint for creating objects, defining their structure and behavior. It is a logical construct.
   - **Object**: An instance of a class. It is a physical entity that occupies space in memory.
 
-- **Constructors**:
+### Constructors:
 
   - Special methods used for initializing objects.
   - A constructor is automatically invoked when an object of a class is created.
@@ -27,7 +27,7 @@
     - **Default Constructor**: A constructor with no parameters. It initializes object members with default values.
     - **Parameterized Constructor**: A constructor that accepts arguments to initialize an object with specific values.
 
-- **Constructor Chaining**:
+### Constructor Chaining:
 
     Constructor chaining in Java refers to the process of one constructor calling another constructor within the same class or in its superclass. This allows for reusing constructor code and avoiding redundancy in initialization tasks.
 
@@ -42,7 +42,7 @@
     - This call must also be the **first statement** in the constructor.
 
 
-- **Initialization Blocks**:
+### Initialization Blocks:
 
   - **Instance Initialization Block**: These are blocks of code inside a class that are executed each time an object is created. They are executed **before** the constructor.
   - **Static Initialization Block**: These blocks are used to initialize **static variables** or perform tasks that need to occur only once when the class is loaded into memory. They are executed when the class is loaded, **before** any objects are created.
@@ -70,12 +70,14 @@
       }
   }
   ```
-        //Output
-        Static Initialization Block executed.
-        Instance Initialization Block executed.
-        Constructor executed.
+  **Output**:
+  ``` 
+      Static Initialization Block executed.
+      Instance Initialization Block executed.
+      Constructor executed.
+  ```
 
-**Access Modifiers**:
+### Access Modifiers:
   The following table shows the accessibility of members based on different access modifiers:
 
   | Modifier                          | Class | Package | Subclass (same pkg) | Subclass (diff pkg) | World (diff pkg & not subclass) |
@@ -85,7 +87,7 @@
   | **no modifier** (package-private) | +     | +       | +                   |                     |                                 |
   | **private**                       | +     |         |                     |                     |                                 |
 
-**Static Keyword in Java**:
+### Static Keyword in Java:
 
   -  It is a **non-access modifier** that can be applied to variables, methods, blocks, and inner classes.
   - **Static Members**: Belong to the class, not to an instance. Can be accessed before any objects of the class are created.
@@ -101,8 +103,9 @@
   - **Static in Interfaces**: Static methods in interfaces are not inherited by implementing classes or sub-interfaces.
   - **Static Inner Classes**: Declaring a static inner class means it has no reference to the outer class instance.
 
-**Final Keyword in Java**:
+### Final Keyword in Java:
   - It is a **non-access modifier** applicable only to a variable, a method, or a class.
   - **Final Variables**: Once initialized, their value cannot be changed, making them constants.
   - **Final Methods**: Cannot be overridden by subclasses (Prevents Method Overriding).
   - **Final Classes**: Cannot be subclassed (Prevents Inheritance).
+
